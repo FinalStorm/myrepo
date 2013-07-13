@@ -10,7 +10,6 @@ var data2 = buf.toString("utf-8")
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response){
-		response.send('aaaa');
 		response.send(data2);
 });
 var port= process.env.PORT ||5000;
